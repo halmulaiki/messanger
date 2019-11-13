@@ -14,14 +14,15 @@ class User{
     this.inbox = []
 
   }
-}
- sendMessage(receiver,content){
+
+ sendMessage(receiver,content) {
    let msg = new Message(receiver,content)
    receiver.inbox.push(msg)
    return `Your message to ${receiver.name} has been sent!`
  }
-readMessage{
+readMessage (i){
   return this.index[i].content
+}
 }
 class Message {
   constructor(receiver, content){
